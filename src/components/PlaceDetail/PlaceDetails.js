@@ -6,8 +6,8 @@ let modalContent = null;
 if(props.selectedPlace){
     modalContent = (
         <View>
-        <Image source={ props.selectedPlace.image } style={styles.placeImage}/>
-        <Text style={styles.placeName}>{props.name}</Text>
+        <Image style={styles.placeImage} source={ props.selectedPlace.image } />
+        <Text style={styles.placeName}>{props.selectedPlace.name}</Text>
         </View>
     );
 }
